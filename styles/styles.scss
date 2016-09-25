@@ -147,6 +147,14 @@ body{
           margin-bottom: 1px;
           background-color: black;
           padding: 10px;
+          .aside__accordion.active{
+            &:after{
+              content: '\25BE';
+              float: right;
+              background-color: inherit;
+              font-size: 80%;
+            }
+          }
           h3{
             color: white;
             font-size: medium;
@@ -158,6 +166,9 @@ body{
               background-color: inherit;
               font-size: 80%;
             }
+          }
+          .show{
+            display: block;
           }
           p{
             color: white;
@@ -186,12 +197,3 @@ body{
     }
   }
 }
-
-
-
-
-
-
-
-
-

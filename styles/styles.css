@@ -110,6 +110,11 @@ body .wrapper {
         margin-bottom: 1px;
         background-color: black;
         padding: 10px; }
+        body .wrapper .container aside section .aside__accordion.active:after {
+          content: '\25BE';
+          float: right;
+          background-color: inherit;
+          font-size: 80%; }
         body .wrapper .container aside section h3 {
           color: white;
           font-size: medium;
@@ -120,6 +125,8 @@ body .wrapper {
             float: right;
             background-color: inherit;
             font-size: 80%; }
+        body .wrapper .container aside section .show {
+          display: block; }
         body .wrapper .container aside section p {
           color: white;
           display: none; }

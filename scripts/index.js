@@ -1,8 +1,25 @@
-function dropDown(clickedId){
+window.onload = function dropDown(){
     "use strict";
-    document.getElementById(clickedId).classList.toggle('active');
-    document.getElementById(clickedId).childNodes[1].classList.toggle('show');
-}
+    let allDropDowns = document.getElementsByClassName("dropDown");
+
+    for (let i = 0; i < allDropDowns.length; i++) {
+        allDropDowns[i].onclick = function(){
+            this.classList.toggle("active");
+
+            if(this.classList.contains('aside__accordion')){
+                this.nextElementSibling.classList.toggle("show");
+                if(this.classList.contains('active')){
+                    this.innerText = 'Click to close';
+                } else {
+                    this.innerText = 'Click to open';
+                }
+            } else {
+                this.childNodes[1].classList.toggle('show');
+            }
+        }
+    }
+};
+
 window.onclick = function(e) {
     if (!e.target.matches('.dropDown')) {
 
