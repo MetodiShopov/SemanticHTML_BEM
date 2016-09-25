@@ -6,7 +6,7 @@ window.onload = function dropDown(){
         allDropDowns[i].onclick = function(){
             this.classList.toggle("active");
 
-            if(this.classList.contains('aside__accordion')){
+            if(this.classList.contains('accordion')){
                 this.nextElementSibling.classList.toggle("show");
                 if(this.classList.contains('active')){
                     this.innerText = 'Click to close';
