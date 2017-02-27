@@ -4,146 +4,171 @@
   src: url("../fonts/Helvetica Inserat LT.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica Inserat LT.woff") format("woff"), url("../fonts/Helvetica Inserat LT.ttf") format("truetype"), url("../fonts/Helvetica Inserat LT.svg#ludger_duvernayregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-body .logo {
+.logo {
   position: fixed;
   margin-top: 75px; }
-body .wrapper {
+
+.wrapper {
   max-width: 1280px;
   min-width: 800px;
   margin-left: 40px; }
-  body .wrapper nav {
-    background-color: #CCCCCC;
-    display: flex;
-    justify-content: space-between;
-    padding: 75px 10px 0 10px;
-    margin-bottom: 10px; }
-    body .wrapper nav ul {
-      padding: 0;
-      display: flex;
-      margin: 0; }
-      body .wrapper nav ul li {
-        list-style: none;
-        cursor: pointer; }
-    body .wrapper nav .nav__menu .dropDown {
-      position: relative;
-      display: inline-block; }
-      body .wrapper nav .nav__menu .dropDown:after {
-        content: '\25B8';
-        float: right;
-        background-color: inherit;
-        font-size: 80%; }
-      body .wrapper nav .nav__menu .dropDown.active {
-        background-color: black; }
-        body .wrapper nav .nav__menu .dropDown.active:after {
-          content: '\25BE';
-          float: right;
-          background-color: black;
-          font-size: 80%; }
-      body .wrapper nav .nav__menu .dropDown__content {
-        display: none;
-        position: absolute;
-        background-color: black;
-        color: white;
-        min-width: 160px;
-        padding: 5px;
-        z-index: 1;
-        left: 0;
-        top: 30px;
-        text-align: left; }
-        body .wrapper nav .nav__menu .dropDown__content a {
-          color: white;
-          padding: 5px 10px;
-          text-decoration: none;
-          display: block;
-          font-size: small;
-          border-bottom: 1px solid #808080; }
-          body .wrapper nav .nav__menu .dropDown__content a:last-child {
-            border: none; }
-      body .wrapper nav .nav__menu .dropDown .show {
-        display: block; }
-    body .wrapper nav .nav__menu li {
-      width: 80px;
-      height: 20px;
-      padding: 6px 10px;
-      background-color: #666666;
+
+.nav {
+  background-color: #CCCCCC;
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 10px 0 10px;
+  margin-bottom: 10px; }
+
+.nav__menu {
+  padding: 0;
+  display: flex;
+  margin: 0; }
+
+.nav__listItems {
+  width: 80px;
+  height: 20px;
+  padding: 6px 10px;
+  background-color: #666666;
+  color: white;
+  font-weight: bold;
+  margin-right: 2px;
+  text-align: center;
+  vertical-align: middle;
+  list-style: none;
+  cursor: pointer; }
+  .nav__listItems:hover {
+    background-color: #000000; }
+
+.nav__flags {
+  margin-left: 5px;
+  border: 2px solid black;
+  border-radius: 4px;
+  opacity: 0.3; }
+  .nav__flags:hover {
+    opacity: 1; }
+
+.dropDown {
+  position: relative;
+  display: inline-block; }
+  .dropDown:after {
+    content: '\25B8';
+    float: right;
+    background-color: inherit;
+    font-size: 80%; }
+  .dropDown.active {
+    background-color: black; }
+    .dropDown.active:after {
+      content: '\25BE';
+      float: right;
+      background-color: black;
+      font-size: 80%; }
+  .dropDown__content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    min-width: 160px;
+    padding: 5px;
+    z-index: 1;
+    left: 0;
+    top: 30px;
+    text-align: left; }
+    .dropDown__content__games {
       color: white;
-      font-weight: bold;
-      margin-right: 2px;
-      text-align: center;
-      vertical-align: middle; }
-      body .wrapper nav .nav__menu li:hover {
-        background-color: #000000; }
-    body .wrapper nav .nav__language li img {
-      margin-left: 5px;
-      border: 2px solid black;
-      border-radius: 4px;
-      opacity: 0.3; }
-      body .wrapper nav .nav__language li img:hover {
-        opacity: 1; }
-  body .wrapper .container {
-    display: flex;
-    align-items: stretch;
-    margin-bottom: 10px; }
-    body .wrapper .container article {
-      width: 70%;
-      padding: 10px;
-      background-color: #515151;
-      border: 10px solid #CCCCCC;
-      color: white;
-      box-sizing: border-box; }
-      body .wrapper .container article h1 {
-        font-size: xx-large;
-        font-family: HelveticaInserat, Arial, serif; }
-      body .wrapper .container article > :nth-child(2) {
-        border-top: 1px double black;
-        margin-top: 0;
-        padding-top: 16px; }
-      body .wrapper .container article p {
-        text-indent: 50px; }
-    body .wrapper .container aside {
-      padding: 10px;
-      width: 30%;
-      border: 10px solid #A3A3A3;
-      background-color: #515151;
-      box-sizing: border-box; }
-      body .wrapper .container aside section {
-        margin-bottom: 1px;
-        background-color: black;
-        padding: 10px; }
-        body .wrapper .container aside section .accordion.active:after {
-          content: '\25BE';
-          float: right;
-          background-color: inherit;
-          font-size: 80%; }
-        body .wrapper .container aside section h3 {
-          color: white;
-          font-size: medium;
-          font-weight: normal;
-          margin: 0;
-          cursor: pointer; }
-          body .wrapper .container aside section h3:after {
-            content: '\25B8';
-            float: right;
-            background-color: inherit;
-            font-size: 80%; }
-        body .wrapper .container aside section .show {
-          display: block; }
-        body .wrapper .container aside section p {
-          color: white;
-          display: none; }
-  body .wrapper footer {
-    background-color: #CCCCCC;
-    padding: 4px 20px 4px 20px;
-    color: #515151;
-    display: flex;
-    justify-content: space-between; }
-    body .wrapper footer ul {
-      padding: 0;
-      display: flex; }
-      body .wrapper footer ul li {
-        list-style: none;
-        margin-left: 15px; }
-        body .wrapper footer ul li a {
-          color: #515151; }
+      padding: 5px 10px;
+      text-decoration: none;
+      display: block;
+      font-size: small;
+      border-bottom: 1px solid #808080; }
+      .dropDown__content__games:last-child {
+        border: none; }
+
+.container {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 10px; }
+
+.article {
+  width: 70%;
+  padding: 10px;
+  background-color: #515151;
+  border: 10px solid #CCCCCC;
+  color: white;
+  box-sizing: border-box; }
+  .article > :nth-child(2) {
+    border-top: 1px double black;
+    margin-top: 0;
+    padding-top: 16px; }
+
+.article__header {
+  font-size: xx-large;
+  font-family: HelveticaInserat, Arial, serif; }
+
+.article__text {
+  text-indent: 50px; }
+
+.aside {
+  padding: 10px;
+  width: 30%;
+  border: 10px solid #A3A3A3;
+  background-color: #515151;
+  box-sizing: border-box; }
+  .aside .accordion.active:after {
+    content: '\25BE';
+    float: right;
+    background-color: inherit;
+    font-size: 80%; }
+
+.aside__section {
+  margin-bottom: 1px;
+  background-color: black;
+  padding: 10px; }
+
+.aside__section__header {
+  cursor: pointer;
+  margin: 0; }
+
+.aside__section__btn {
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: normal;
+  background-color: black;
+  border: none;
+  padding: 0;
+  width: 100%;
+  text-align: left; }
+  .aside__section__btn:after {
+    content: '\25B8';
+    float: right;
+    background-color: inherit;
+    font-size: 80%; }
+  .aside__section__btn:focus {
+    outline: none; }
+
+.aside__section__text {
+  color: white;
+  display: none; }
+
+.footer {
+  background-color: #CCCCCC;
+  padding: 4px 20px 4px 20px;
+  color: #515151;
+  display: flex;
+  justify-content: space-between; }
+
+.footer__menu {
+  padding: 0;
+  display: flex; }
+
+.footer__listItems {
+  list-style: none;
+  margin-left: 15px; }
+  .footer__listItems a {
+    color: #515151; }
+
+.show {
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */
