@@ -47,6 +47,8 @@
   opacity: 0.3; }
   .nav__flags:hover {
     opacity: 1; }
+  .nav__flags.selected {
+    opacity: 1; }
 
 .dropDown {
   position: relative;
@@ -89,23 +91,23 @@
   align-items: stretch;
   margin-bottom: 10px; }
 
-.article {
+.section {
   width: 70%;
   padding: 10px;
   background-color: #515151;
   border: 10px solid #CCCCCC;
   color: white;
   box-sizing: border-box; }
-  .article > :nth-child(2) {
+  .section > :nth-child(2) {
     border-top: 1px double black;
     margin-top: 0;
     padding-top: 16px; }
 
-.article__header {
+.section__header {
   font-size: xx-large;
   font-family: HelveticaInserat, Arial, serif; }
 
-.article__text {
+.section__text {
   text-indent: 50px; }
 
 .aside {
@@ -114,24 +116,27 @@
   border: 10px solid #A3A3A3;
   background-color: #515151;
   box-sizing: border-box; }
-  .aside .accordion.active:after {
+
+.aside__detail {
+  margin-bottom: 1px;
+  background-color: black;
+  padding: 10px; }
+  .aside__detail[open] .aside__detail__text {
+    display: inline-block; }
+  .aside__detail[open] .aside__detail__smr:after {
     content: '\25BE';
     float: right;
     background-color: inherit;
     font-size: 80%; }
+  .aside__detail[open] .aside__detail__smr .smr--opened {
+    display: inline-block; }
+  .aside__detail[open] .aside__detail__smr .smr--closed {
+    display: none; }
 
-.aside__section {
-  margin-bottom: 1px;
-  background-color: black;
-  padding: 10px; }
-
-.aside__section__header {
+.aside__detail__smr {
   cursor: pointer;
-  margin: 0; }
-
-.aside__section__btn {
+  margin: 0;
   color: white;
-  cursor: pointer;
   font-size: medium;
   font-weight: normal;
   background-color: black;
@@ -139,16 +144,21 @@
   padding: 0;
   width: 100%;
   text-align: left; }
-  .aside__section__btn:after {
+  .aside__detail__smr:after {
     content: '\25B8';
     float: right;
     background-color: inherit;
     font-size: 80%; }
-  .aside__section__btn:focus {
+  .aside__detail__smr::-webkit-details-marker {
+    display: none; }
+  .aside__detail__smr:focus {
     outline: none; }
 
-.aside__section__text {
+.aside__detail__text {
   color: white;
+  display: none; }
+
+.smr--opened {
   display: none; }
 
 .footer {

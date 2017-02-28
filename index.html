@@ -23,43 +23,46 @@
                 </li>
             </ul>
             <div class="nav__language">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAADqElEQVQ4jbWUbUyVZRjHf/fzcp4jCcyQLY6Ii5mW0pvLypQRgYuttJSMDTUCxZD6YG3OrK2tD04sl3NopEnmmmds5aa9DLdM5oHGelmoHFNogqRiCUcoD3B4Xs7Vh6OIbbm++N/uL/d97f5d1/W/70uJSITbKCUiMuTBFweb+eTzZk53XECZOpbPBCA2FGPLpnKWDJzmzPvbQNMILHyKyKp1PFu2FU0DpRSu6+HaDpnZmSzLu48ic4CHqyowAJzmJsqK8ykpzuXT4FG21zdyprMX5TMRx2Vk1EFiMZxIBHQdLxrF9eL0XblK3PPwHI9AdoCK5+dRmhrF37iHmBuH64A/P9hKT+0OMtdUUlVaxMqSfPYFj1C3/yjhHzpxHA+l1E2le/E4zlCMzJlZrFiYw1LfFVJbGhh1PVKWv8SMkhKABGDf3BKeM/vorqnh3PZaplWtoXrlYspeyGVvwzGypqRhh91xlwsTJ1i8WVlIcdIgKS1BbKWRWlZO+qJFDGsGdcEm1pbmJwD3PpKD+eB0Hlq/jr7DjTijNiP9/dwxOZ3Xyp8GoOdEE4iACKNunJzsu9j8ahH9oe+ROa+TXlAwlsDly4OkTEq+YXLvlk3Yow52HHS/HxC8WAxxPZQClGI4fIqh9jAohS+QQWpuLsow0CwLESEeiyGeB4Bp6Pgn+AhseDsBaLk7e+zwv6T5LJTlA0Bcl/jIyK2fp66zoLsL7ZZR4yTI/w29SQbA9Oo12LaLbTvX8ArNslC6jjgOcccl2n6SoZPtiRZNCTApLy/hyfV4v4XSdOK2jS5xLL/vWmYicqCpXdrO/iHjdfW3ThlsCYn0J/Z7du6U0JRMCWVNk/DqSvm3Bo63SSR0TNzo33LBFjnU2iEiIgbAiV86mDMrC4CB1lYufbwbdfE83oInqfuug1kFTzDPUKASyzI0wl2XCB4IsXZFIVMz0tAdhwuf7efsxrfQ5y3g94z74fEZCQ/efaOYyec7CS8vpXfDeox7ZtC0pJrSNti441u6LkYwDX2sr7qmiI44bN52iLmL3mHjew3EZuaQs3sXObvqsAb6yP/yoxse/Lp6FaqnG21+Hs3zl1IfOstPP36FUgJ+E5+pj7V7PMRMTqL/r2Fqar8meLCV8hfzeOXlImbvqWf4eNsNgD77AUKPLSbYeo5T34RAhKmBSUBi2E2wTJTfj5mWBpqGPnEihq6Rfmfy2LCzHY8P9x7hwOGfWfbMo1SsKCSJxEe7reP6H16BueiGshn/AAAAAElFTkSuQmCC" alt="English" class="nav__flags" id="englishLanguage" onclick="selectLang(this.id)">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAAfUlEQVQ4je2UsQ2EMAxFX0gaoKGjYwO2YIYbj4FYIavYMQXipFOSDppTvmTJ8rf1XH1nZsaLCgDTtgO/HE3G2AeO/cMyD+VrEVhXiLHqh6szNKUMoJoQkfp7Ilep5p73AHT162fUAA3QAP8ACHfjO5eZpVm+5L+5U5J7O65PrCYoA4X9h78AAAAASUVORK5CYII=" alt="Français" class="nav__flags" id="frenchLanguage" onclick="selectLang(this.id)">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAQCAYAAAD9L+QYAAAAmUlEQVQ4jb3UMQ7CMAyF4T+Rg7owRFVzNq4F5+sJkoG1oiVhaFE7ML7yJK+fFVuOa62NQESfpwEppXRVyznnYMAMUEqRwcMwAMxeJv7IqbgBPMwzma5Pt1kGcKMCVYZ/LQOYgCakHdDxj5mzbKXKcsBr9LS37hEuHhYa7j28ZDZc+h33ke1ORQnsuHzmbsfXPqEX6qvozvxyP+6kI/zSbJu5AAAAAElFTkSuQmCC" alt="Deutsch" class="nav__flags" id="germanLanguage" onclick="selectLang(this.id)">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAADqElEQVQ4jbWUbUyVZRjHf/fzcp4jCcyQLY6Ii5mW0pvLypQRgYuttJSMDTUCxZD6YG3OrK2tD04sl3NopEnmmmds5aa9DLdM5oHGelmoHFNogqRiCUcoD3B4Xs7Vh6OIbbm++N/uL/d97f5d1/W/70uJSITbKCUiMuTBFweb+eTzZk53XECZOpbPBCA2FGPLpnKWDJzmzPvbQNMILHyKyKp1PFu2FU0DpRSu6+HaDpnZmSzLu48ic4CHqyowAJzmJsqK8ykpzuXT4FG21zdyprMX5TMRx2Vk1EFiMZxIBHQdLxrF9eL0XblK3PPwHI9AdoCK5+dRmhrF37iHmBuH64A/P9hKT+0OMtdUUlVaxMqSfPYFj1C3/yjhHzpxHA+l1E2le/E4zlCMzJlZrFiYw1LfFVJbGhh1PVKWv8SMkhKABGDf3BKeM/vorqnh3PZaplWtoXrlYspeyGVvwzGypqRhh91xlwsTJ1i8WVlIcdIgKS1BbKWRWlZO+qJFDGsGdcEm1pbmJwD3PpKD+eB0Hlq/jr7DjTijNiP9/dwxOZ3Xyp8GoOdEE4iACKNunJzsu9j8ahH9oe+ROa+TXlAwlsDly4OkTEq+YXLvlk3Yow52HHS/HxC8WAxxPZQClGI4fIqh9jAohS+QQWpuLsow0CwLESEeiyGeB4Bp6Pgn+AhseDsBaLk7e+zwv6T5LJTlA0Bcl/jIyK2fp66zoLsL7ZZR4yTI/w29SQbA9Oo12LaLbTvX8ArNslC6jjgOcccl2n6SoZPtiRZNCTApLy/hyfV4v4XSdOK2jS5xLL/vWmYicqCpXdrO/iHjdfW3ThlsCYn0J/Z7du6U0JRMCWVNk/DqSvm3Bo63SSR0TNzo33LBFjnU2iEiIgbAiV86mDMrC4CB1lYufbwbdfE83oInqfuug1kFTzDPUKASyzI0wl2XCB4IsXZFIVMz0tAdhwuf7efsxrfQ5y3g94z74fEZCQ/efaOYyec7CS8vpXfDeox7ZtC0pJrSNti441u6LkYwDX2sr7qmiI44bN52iLmL3mHjew3EZuaQs3sXObvqsAb6yP/yoxse/Lp6FaqnG21+Hs3zl1IfOstPP36FUgJ+E5+pj7V7PMRMTqL/r2Fqar8meLCV8hfzeOXlImbvqWf4eNsNgD77AUKPLSbYeo5T34RAhKmBSUBi2E2wTJTfj5mWBpqGPnEihq6Rfmfy2LCzHY8P9x7hwOGfWfbMo1SsKCSJxEe7reP6H16BueiGshn/AAAAAElFTkSuQmCC" alt="English" class="nav__flags" id="englishLanguage">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAAfUlEQVQ4je2UsQ2EMAxFX0gaoKGjYwO2YIYbj4FYIavYMQXipFOSDppTvmTJ8rf1XH1nZsaLCgDTtgO/HE3G2AeO/cMyD+VrEVhXiLHqh6szNKUMoJoQkfp7Ilep5p73AHT162fUAA3QAP8ACHfjO5eZpVm+5L+5U5J7O65PrCYoA4X9h78AAAAASUVORK5CYII=" alt="Français" class="nav__flags" id="frenchLanguage">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAQCAYAAAD9L+QYAAAAmUlEQVQ4jb3UMQ7CMAyF4T+Rg7owRFVzNq4F5+sJkoG1oiVhaFE7ML7yJK+fFVuOa62NQESfpwEppXRVyznnYMAMUEqRwcMwAMxeJv7IqbgBPMwzma5Pt1kGcKMCVYZ/LQOYgCakHdDxj5mzbKXKcsBr9LS37hEuHhYa7j28ZDZc+h33ke1ORQnsuHzmbsfXPqEX6qvozvxyP+6kI/zSbJu5AAAAAElFTkSuQmCC" alt="Deutsch" class="nav__flags" id="germanLanguage">
             </div>
         </nav>
         <div class="container">
-            <article class="article">
-                <h1 class="article__header">Page title</h1>
-                <p class="article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p class="article__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                <p class="article__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a iece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                <p class="article__text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                <p class="article__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-            </article>
+            <section class="section">
+                <h1 class="section__header">Page title</h1>
+                <p class="section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="section__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p class="section__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a iece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <p class="section__text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <p class="section__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </section>
             <aside class="aside">
-                <section class="aside__section">
-                    <h3 class="aside__section__header">
-                        <button class="aside__section__btn dropDown accordion">Click to open</button>
-                    </h3>
-                    <p class="aside__section__text accordion__content">Lorem Ipsum is simply dummy text dummy text of the printing and typesetting industry. Lorem Ipsum has
+                <details class="aside__detail">
+                    <summary class="aside__detail__smr">
+                        <span class="smr--closed">Click to open.</span>
+                        <span class="smr--opened">Click to close.</span>
+                    </summary>
+                    <p class="aside__detail__text">Lorem Ipsum is simply dummy text dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the indus book. desktop publishing software like Aldux PageMake including versions of Lorem
                         ageMaker including versions of Lorem Ipsum...</p>
-                </section>
-                <section class="aside__section">
-                    <h3 class="aside__section__header">
-                        <button class="aside__section__btn dropDown accordion">Click to open</button>
-                    </h3>
-                    <p class="aside__section__text accordion__content">Lorem Ipsum is simply dummy text dummy text of the printing and typesetting industry. Lorem Ipsum has
+                </details>
+                <details class="aside__detail">
+                    <summary class="aside__detail__smr">
+                        <span class="smr--closed">Click to open.</span>
+                        <span class="smr--opened">Click to close.</span>
+                    </summary>
+                    <p class="aside__detail__text">Lorem Ipsum is simply dummy text dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the indus book. desktop publishing software like Aldux PageMake including versions of Lorem
                         ageMaker including versions of Lorem Ipsum...</p>
-                </section>
-                <section class="aside__section">
-                    <h3 class="aside__section__header">
-                        <button class="aside__section__btn dropDown accordion">Click to open</button>
-                    </h3>
-                    <p class="aside__section__text accordion__content">Lorem Ipsum is simply dummy text dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus book. desktop publishing software like Aldux PageMake including versions of Lorem ageMaker including versions of Lorem Ipsum...</p>
-                </section>
+                </details>
+                <details class="aside__detail">
+                    <summary class="aside__detail__smr">
+                        <span class="smr--closed">Click to open.</span>
+                        <span class="smr--opened">Click to close.</span>
+                    </summary>
+                    <p class="aside__detail__text">Lorem Ipsum is simply dummy text dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus book. desktop publishing software like Aldux PageMake including versions of Lorem ageMaker including versions of Lorem Ipsum...</p>
+                </details>
             </aside>
         </div>
         <footer class="footer">
